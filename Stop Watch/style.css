@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(153, 151, 151);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.container{
+    height: 350px;
+    width: 750px;
+    background-color:#27373b;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.timer-display{
+    height: 150px;
+    width: 100%;
+    background-color: rgb(221, 221, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.actions{
+    height: 45%;
+    width: 85%;
+    /* background-color: green; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    padding: 20px;
+}
+
+.actions button{
+    background-color: grey;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+
+.actions button:hover{
+    background-color: rgb(63, 62, 62);
+}
+
+.stopwatch-laps{
+    margin-top: 20px;
+    position: relative;
+    left: 5%;
+    height: 311px;
+    width: 286px;
+    background-color: rgb(221, 221, 219);
+    border-radius: 10px;
+}
+
+.stopwatch-laps p{
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: black;
+}
+
+.stopwatch-laps ul{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.stopwatch-laps ul li{
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-family: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
